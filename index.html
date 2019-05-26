@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Material -->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- -------- -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+<body>
+    <div id="calculator">
+        <div class="row">
+            <div class="col-12 text-left">
+                <p>Сторона А, мм:</p>
+            </div>
+        </div>
+        <div class="row row-object">
+            <div class="col-12 text-left">
+                <div class="md-form">
+                    <input type="number" id="sideA" class="form-control">
+                    <label for="sideA">Сторона А</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-left">
+                <p>Сторона В, мм:</p>
+            </div>
+        </div>
+        <div class="row row-object">
+            <div class="col-12 text-left">
+                <div class="md-form">
+                    <input type="number" id="sideB" class="form-control">
+                    <label for="sideB">Сторона B</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-left">
+                <p>Высота L, мм:</p>
+            </div>
+        </div>
+        <div class="row row-object">
+            <div class="col-12 text-left">
+                <div class="md-form">
+                    <input type="number" id="sideL" class="form-control">
+                    <label for="sideA">Высота L</label>
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- ----------------------------- -->
+
+        <div class="row">
+            <div class="col-12">
+                <p>Тип зонта:</p>
+            </div>
+        </div>
+        <div class="row row-object1">
+            <div class="col-12">
+                <select class="custom-select form-control-sm" id ="umbrellaType">
+                    <option selected disabled>Выберите тип зонта:</option>
+                    <option value="1">Пристенный</option>
+                    <option value="2">Островной</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-left">
+                <p>Материал:</p>
+            </div>
+        </div>
+        <div class="row row-object1">
+            <div class="col-12">
+                <select class="custom-select form-control-sm" id ="material">
+                    <option selected disabled>Выберите материал:</option>
+                    <option value="1">Оцинковка - 0.4 мм</option>
+                    <option value="2">Оцинковка - 0.5 мм</option>
+                    <option value="3">Оцинковка - 0.65 мм</option>
+                    <option value="4">Нержавейка - 0.5 мм</option>
+                    <option value="5">Нержавейка - 0.8 мм</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p>Жироуловитель:</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <select class="custom-select form-control-sm" id ="fatCatcher">
+                    <option selected disabled>Наличие жироуловителя:</option>
+                    <option value="1">Есть</option>
+                    <option value="2">Нет</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row butt">
+            <div class="col-12">
+                <button type="button" class="calcButton" id="calcButton" onclick="resultButton();">Рассчитать</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-left">
+                <p>Итого:</p>
+            </div></div>
+				<div class="row">
+            <div class="col-12">
+                <p id="result"></p>
+
+				</div>
+			</div>
+		</div>
+    </div>
+
+
+
+    <!-- Custom -->
+    <script src="script.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- ------------------------ -->
+</body>
+</html>
